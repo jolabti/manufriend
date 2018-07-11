@@ -4,6 +4,22 @@
 
 		class Manufriend_model extends CI_model {
 
+
+				public function __construct() {
+					 parent::__construct();
+
+
+					//  header("Access-Control-Allow-Origin: *");
+					//  header("Content-Type: application/json; charset=UTF-8");
+					//  header("Access-Control-Allow-Methods: POST");
+					//  header("Access-Control-Allow-Methods: GET");
+					//  header("Access-Control-Max-Age: 3600");
+					//  header("Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With");
+			     $this->db->cache_on();
+
+
+				}
+
 			public function mm_insert_user($data){
 				$this->db->insert('manufriend_user',$data);
 			}
