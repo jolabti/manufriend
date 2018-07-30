@@ -94,7 +94,7 @@ $query_builder = TRUE;
 // 	'failover' => array(),
 // 	'save_queries' => TRUE
 // );
-//
+
 
 $db['default'] = array(
 	'dsn'	=> '',
