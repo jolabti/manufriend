@@ -240,8 +240,8 @@ class Welcome extends CI_Controller
         $pass["values"]= $this->Manufriend_model->mm_show_hang_out();
         //echo json_encode($pass)
 
-        $this->load->view("admin/01_view_head");
-        $this->load->view("admin/02_view_header");
+        $this->load->view("admin/01_view_head", $pass);
+        $this->load->view("admin/02_view_header", $pass);
         $this->load->view("admin/03_view_sidebar", $pass);
         $this->load->view("admin/11_view_hang_out", $pass);
         $this->load->view("admin/05_view_footer");
@@ -258,13 +258,13 @@ class Welcome extends CI_Controller
     // SHOPPING
     public function shopping()
     {
-        //$pass["valemail"]= $this->session->userdata["email"];
+        $pass["valemail"]= $this->session->userdata["email"];
 
         $pass["values"]= $this->Manufriend_model->mm_show_shopping();
         //echo json_encode($pass)
 
-        $this->load->view("admin/01_view_head");
-        $this->load->view("admin/02_view_header");
+        $this->load->view("admin/01_view_head", $pass);
+        $this->load->view("admin/02_view_header", $pass);
         $this->load->view("admin/03_view_sidebar", $pass);
         $this->load->view("admin/12_view_shopping", $pass);
         $this->load->view("admin/05_view_footer");
