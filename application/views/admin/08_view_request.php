@@ -35,7 +35,7 @@
               </thead>
               <tbody>
               	<?php foreach ($values as $key) {
-    # code... ?>
+    # code...?>
                <tr>
                   <td><?= $key->id_trx; ?></td>
                   <td><?= $key->nama_user; ?></td>
@@ -44,7 +44,7 @@
                   <td><?= $key->tanggal_order; ?></td>
                   <td><?= $key->durasi; ?></td>
                   <td><?= $key->notes; ?></td>
-                  <td><?= $key->harga; ?></td>
+                  <td><?= $key->harga_service; ?></td>
                   <td><?= $key->total_harga; ?></td>
                   <td></td>
                   <td>
