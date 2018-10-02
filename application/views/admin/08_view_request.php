@@ -35,8 +35,7 @@
               </thead>
               <tbody>
               	<?php foreach ($values as $key) {
-              		# code...
-              	?>
+    # code... ?>
                <tr>
                   <td><?= $key->id_trx; ?></td>
                   <td><?= $key->nama_user; ?></td>
@@ -49,11 +48,12 @@
                   <td><?= $key->total_harga; ?></td>
                   <td></td>
                   <td>
-						<a href="<?= site_url('welcome/api_approve');?>/<?= $key->id_trx; ?>" class="btn btn-success">Approve</a>
+						<a href="<?= site_url('welcome/api_approve'); ?>/<?= $key->id_trx; ?>" class="btn btn-success">Approve</a>
 						<a href="#" class="btn btn-danger">Cancel</a>
                   </td>
-                </tr> 
-                <?php } ?>
+                </tr>
+                <?php
+} ?>
               </tbody>
             </table>
 					<!-- <div class="panel panel-teal panel-widget border-right">
