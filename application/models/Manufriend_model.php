@@ -124,7 +124,7 @@
                 $this->db->select('*');
                 $this->db->from('manufriend_user');
                 $this->db->join('manufriend_transaction', 'manufriend_user.id_user = manufriend_transaction.id_user');
-                //$this->db->join('manufriend_service', 'manufriend_service.id_service = manufriend_transaction.id_service');
+                $this->db->join('manufriend_service', 'manufriend_service.id_service = manufriend_transaction.id_service');
                 // $this->db->join('manufriend_status', 'manufriend_status.id_status = manufriend_transaction.id_status');
                 $this->db->where('id_status', 2);
 
@@ -137,7 +137,7 @@
                 $this->db->select('*');
                 $this->db->from('manufriend_user');
                 $this->db->join('manufriend_transaction', 'manufriend_user.id_user = manufriend_transaction.id_user');
-                //$this->db->join('manufriend_service', 'manufriend_service.id_service = manufriend_transaction.id_service');
+                $this->db->join('manufriend_service', 'manufriend_service.id_service = manufriend_transaction.id_service');
                 // $this->db->join('manufriend_status', 'manufriend_status.id_status = manufriend_transaction.id_status');
                 $this->db->where('id_status', 3);
 
