@@ -152,7 +152,7 @@
                 $this->db->join('manufriend_transaction', 'manufriend_user.id_user = manufriend_transaction.id_user');
                 $this->db->join('manufriend_service', 'manufriend_service.id_service = manufriend_transaction.id_service');
                 $this->db->join('manufriend_status', 'manufriend_status.id_status = manufriend_transaction.id_status');
-                $this->db->where('id_service', 1);
+                $this->db->where('manufriend_service.id_service', 1);
 
                 $q = $this->db->get();
                 return $q->result();
@@ -165,7 +165,7 @@
                 $this->db->join('manufriend_transaction', 'manufriend_user.id_user = manufriend_transaction.id_user');
                 $this->db->join('manufriend_service', 'manufriend_service.id_service = manufriend_transaction.id_service');
                 $this->db->join('manufriend_status', 'manufriend_status.id_status = manufriend_transaction.id_status');
-                $this->db->where('id_service', 2);
+                $this->db->where('manufriend_service.id_service', 2);
 
                 $q = $this->db->get();
                 return $q->result();
@@ -178,7 +178,7 @@
                 $this->db->join('manufriend_transaction', 'manufriend_user.id_user = manufriend_transaction.id_user');
                 //$this->db->join('manufriend_service', 'manufriend_service.id_service = manufriend_transaction.id_service');
                 $this->db->join('manufriend_status', 'manufriend_status.id_status = manufriend_transaction.id_status');
-                $this->db->where('id_service', 3);
+                $this->db->where('manufriend_service.id_service', 3);
 
                 $q = $this->db->get();
                 return $q->result();
@@ -191,7 +191,7 @@
                 $this->db->join('manufriend_transaction', 'manufriend_user.id_user = manufriend_transaction.id_user');
                 //$this->db->join('manufriend_service', 'manufriend_service.id_service = manufriend_transaction.id_service');
                 $this->db->join('manufriend_status', 'manufriend_status.id_status = manufriend_transaction.id_status');
-                $this->db->where('id_service', 4);
+                $this->db->where('manufriend_service.id_service', 4);
 
                 $q = $this->db->get();
                 return $q->result();
@@ -204,7 +204,7 @@
                 $this->db->join('manufriend_transaction', 'manufriend_user.id_user = manufriend_transaction.id_user');
                 //$this->db->join('manufriend_service', 'manufriend_service.id_service = manufriend_transaction.id_service');
                 $this->db->join('manufriend_status', 'manufriend_status.id_status = manufriend_transaction.id_status');
-                $this->db->where('id_service', 5);
+                $this->db->where('manufriend_service.id_service', 5);
 
                 $q = $this->db->get();
                 return $q->result();
