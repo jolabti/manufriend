@@ -35,7 +35,7 @@ MAIN-->
               </thead>
               <tbody>
               	<?php foreach ($values as $key) {
-    # code... ?>
+    # code...?>
                <tr>
 								 <td><?= $key->id_trx; ?></td>
 	 							<td><?= $key->nama_user; ?></td>
